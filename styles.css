@@ -1,0 +1,24 @@
+/* muw拡張機能のスタイル - パフォーマンス最適化版 */
+
+/* rel属性ハイライト */
+.muw-rel-highlight {
+  pointer-events: none !important;
+  box-sizing: border-box !important;
+  /* transitionを削除してパフォーマンス向上 */
+}
+
+/* alt属性オーバーレイ */
+.muw-alt-overlay {
+  pointer-events: none !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  /* 必要最小限のスタイルのみ残す */
+}
+
+/* 凡例 */
+.muw-legend {
+  font-family: Arial, sans-serif !important;
+  line-height: 1.4 !important;
+  /* 追加のパフォーマンス最適化 */
+  will-change: auto !important; /* GPUアクセラレーションを最適化 */
+}
