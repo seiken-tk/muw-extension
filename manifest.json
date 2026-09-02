@@ -10,11 +10,11 @@
   },
   "action": {
     "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
+      "16": "images/icon16_gray.png",
+      "48": "images/icon48_gray.png",
+      "128": "images/icon128_gray.png"
     },
-    "default_title": "muw"
+    "default_title": "muw (OFF)"
   },
   "background": {
     "service_worker": "background.js"
@@ -27,6 +27,6 @@
       "run_at": "document_idle"
     }
   ],
-  "permissions": ["activeTab", "scripting", "tabs", "contextMenus"],
-  "host_permissions": ["<all_urls>"]
+  "permissions": ["activeTab", "scripting", "contextMenus", "storage"],
+  "host_permissions": ["https://muw.jp/*"]
 }
